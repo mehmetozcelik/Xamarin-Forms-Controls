@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsControls.TableViewPage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="My Settings">
+
+                        <SwitchCell Text="Bildirimler" On="False"/>
+                        <EntryCell Text="Bir mesaj bırakın!"/>
+                        <TextCell Text="Developer Actions" Detail="Join"/>
+                        <ImageCell ImageSource="person.png" Text="Space" Detail="SpaceX"/>                        
+                        <!-- Kendi taslağını oluşturma -->
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <Image Source="person.png" Aspect="Fill" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="Hello,I am not alien!" Grid.Row="0" Grid.Column="1"/>
+                                <Switch IsToggled="True" Grid.Row="0" Grid.Column="2"/>
+                            </Grid>
+                        </ViewCell>
+
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

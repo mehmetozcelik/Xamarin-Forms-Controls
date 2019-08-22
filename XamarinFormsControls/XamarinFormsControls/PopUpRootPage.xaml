@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsControls.PopUpRootPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Go To my Pop Up Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" x:Name="btnPopUp" Clicked="btnPopUp_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

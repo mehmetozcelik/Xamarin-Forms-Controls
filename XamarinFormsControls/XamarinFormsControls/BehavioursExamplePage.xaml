@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:local="clr-namespace:XamarinFormsControls.Behaviors"
+             x:Class="XamarinFormsControls.BehavioursExamplePage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20"/>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Entry x:Name="passWoprd" Placeholder="******">
+                <Entry.Behaviors>
+                    <local:PasswordValidation></local:PasswordValidation>
+                </Entry.Behaviors>
+            </Entry>
+            
+            <Entry x:Name="eMail" Placeholder="eMail">
+                <Entry.Behaviors>
+                    <local:EmailValidation></local:EmailValidation>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Label x:Name="catchaLabel" />
+            <Entry x:Name="captcha" Placeholder="captcha" local:NumericValidation.AttachBehavior="True"></Entry>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

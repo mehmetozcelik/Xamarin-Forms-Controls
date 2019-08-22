@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsControls.LoginSettingsPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20"/>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="userName" Placeholder="Username"/>
+            <Entry x:Name="passWord" Placeholder="******" IsPassword="True"/>
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="isRemembered" />
+                <Label Text="Beni Hatırla"/>
+            </StackLayout>
+
+            <Button x:Name="Login" Text="Login" Clicked="Login_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

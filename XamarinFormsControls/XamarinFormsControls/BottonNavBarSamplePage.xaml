@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
+             x:Class="XamarinFormsControls.BottonNavBarSamplePage">
+
+
+    <ContentPage xf:BottomBarPageExtensions.TabColor="#E91E63" Icon="dataInput.png"/>
+    <ContentPage xf:BottomBarPageExtensions.TabColor="#1565C0" Icon="matches.png"/>
+    <ContentPage xf:BottomBarPageExtensions.TabColor="#00695C" Icon="bet.png"/>
+    <ContentPage xf:BottomBarPageExtensions.TabColor="#E91E63" Icon="myApproval.png"/>
+    
+
+</xf:BottomBarPage>
